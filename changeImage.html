@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Change Background Image</title>
+  </head>
+  <body>
+    
+    <script>
+      var images = [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ];
+      function changeBackground() {
+        var n = Math.floor(Math.random()*images.length);
+        
+        document.body.style.backgroundImage = "url("+images[n]+")";
+        document.body.style.backgroundSize = "cover";
+      }
+    </script>
+    <button onclick = changeBackground()>Change Me</button>
+  </body>
+</html>
